@@ -1,0 +1,6 @@
+Django==3.1.7
+django-countries==7.1
+djangorestframework==3.12.2
+Pillow==8.1.2
+PyJWT==2.0.1
+
