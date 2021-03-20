@@ -59,17 +59,17 @@ class Experience(models.Model):
 
 
 class SkillLevel(models.Model):
-    web_design = models.IntegerField(max_length=3)
-    html_css = models.IntegerField(max_length=3)
-    python = models.IntegerField(max_length=3)
-    frameworks = models.IntegerField(max_length=3)
+    web_design = models.IntegerField()
+    html_css = models.IntegerField()
+    python = models.IntegerField()
+    frameworks = models.IntegerField()
 
 
 class Qualities(models.Model):
-    first = models.IntegerField(max_length=3)
-    second = models.IntegerField(max_length=3)
-    third = models.IntegerField(max_length=3)
-    fourth = models.IntegerField(max_length=3)
+    first = models.IntegerField()
+    second = models.IntegerField()
+    third = models.IntegerField()
+    fourth = models.IntegerField()
 
 
 class Certs(models.Model):

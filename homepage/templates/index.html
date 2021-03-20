@@ -786,8 +786,8 @@
                         <h3>How Can I <span>Help You?</span></h3>
                       </div>
 
-                      <form id="contact_form" class="contact-form" action="https://lmpixels.com/demo/breezycv/darkfw/1/contact_form/contact_form.php" method="post">
-
+                      <form id="form" class="contact-form" action="{% url 'contact' %}" method="POST">
+                        {% csrf_token %}
                         <div class="messages"></div>
 
                         <div class="controls two-columns">
@@ -826,7 +826,7 @@
 
                           {% comment %} <div class="g-recaptcha" data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI" data-theme="dark"></div> {% endcomment %}
       
-                          <input type="submit" class="button btn-send" value="Send message">
+                          <input type="submit" class="button btn-send" value="Send message" name="enter">
                         </div>
                       </form>
                     </div>
